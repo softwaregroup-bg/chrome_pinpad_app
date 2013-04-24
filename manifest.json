@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+
+    "name": "usb dev test",
+    "description": "This extension demonstrates a browser action with usb testing.",
+    "version": "1.0",
+    "icons": {
+        "16":"icon_offline.png"
+    },
+    "permissions": ["serial"],
+    "app":{
+        "background": {
+            "scripts": ["init.js"],
+            "persistent": false
+        }
+    }
+}

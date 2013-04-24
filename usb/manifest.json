@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "usb dev test",
+    "description": "This extension demonstrates a browser action with usb testing.",
+    "version": "1.0",
+    "permissions": ["usb"],
+    "optional_permissions": [ {"usbDevices": [{"vendorId": 1659, "productId": 8963}]}],
+    "icons": {
+        "16":"icon_offline.png"
+    },
+    "app":{
+        "background": {
+            "scripts": ["init.js"],
+            "persistent": false
+        }
+    }
+}
